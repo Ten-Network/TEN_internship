@@ -23,7 +23,7 @@
 // // //   const getdata = async () => {
 // // //     // const TOKEN = localStorage.getItem("auth-token");
 // // //     await axios
-// // //       .get("https://interns-f4di.onrender.com/user/me", {
+// // //       .get("https://ten-internship-xjyn.onrender.com/user/me", {
 // // //         headers:{
 // // //           "Content-Type": "application/json",
 // // //           authtoken: sessionStorage.getItem("auth-token"),

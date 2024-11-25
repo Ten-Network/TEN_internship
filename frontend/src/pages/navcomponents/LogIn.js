@@ -120,7 +120,7 @@ function LogIn() {
                       <div className="line"></div>
                     </div>
                     <div className="social-icons">
-                      <a href="https://interns-f4di.onrender.com/auth/google/register">
+                      <a href="https://ten-internship-xjyn.onrender.com/auth/google/register">
                         <button aria-label="Login with Google" className="icon">
                           <div className="g_icon">
                             <i className="fa fa-google"></i>

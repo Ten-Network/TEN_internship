@@ -1,8 +1,8 @@
 // // // import axios from "axios";
 
 // // // const api = axios.create({
-// // //   // baseURL: "https://interns-f4di.onrender.com/",
-// // //   baseURL: "https://interns-f4di.onrender.com/",
+// // //   // baseURL: "https://ten-internship-xjyn.onrender.com/",
+// // //   baseURL: "https://ten-internship-xjyn.onrender.com/",
 // // // });
 
 // // // // Set the default headers for all requests
@@ -27,7 +27,7 @@
 
 // // // // Create an axios instance with default configuration
 // // // const api = axios.create({
-// // //   baseURL: "https://interns-f4di.onrender.com", // Base URL of your backend API
+// // //   baseURL: "https://ten-internship-xjyn.onrender.com", // Base URL of your backend API
 // // //   headers: {
 // // //     "Content-Type": "application/json",
 // // //   },
@@ -74,7 +74,7 @@
 // // import axios from "axios";
 
 // // const api = axios.create({
-// //   baseURL: "https://interns-f4di.onrender.com", // Change this to your backend's base URL
+// //   baseURL: "https://ten-internship-xjyn.onrender.com", // Change this to your backend's base URL
 // //   headers: {
 // //     "Content-Type": "application/json",
 // //   },
@@ -111,7 +111,7 @@
 // import axios from "axios";
 
 // const api = axios.create({
-//   baseURL: "https://interns-f4di.onrender.com", // Make sure this is your backend's base URL
+//   baseURL: "https://ten-internship-xjyn.onrender.com", // Make sure this is your backend's base URL
 //   headers: {
 //     "Content-Type": "multipart/form-data",
 //     "Content-Type": "application/json",
@@ -137,7 +137,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://interns-f4di.onrender.com", 
+  baseURL: "https://ten-internship-xjyn.onrender.com", 
   // baseURL: "http://localhost:5000", 
 });
 

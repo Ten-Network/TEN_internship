@@ -49,7 +49,7 @@ function Admin() {
   const PostJob = async jobDetails => {
     try {
       await axios
-        .post(`https://interns-f4di.onrender.com/jobs/create`, jobDetails)
+        .post(`https://ten-internship-xjyn.onrender.com/jobs/create`, jobDetails)
         .then(res => {
           console.log(res.data.message);
           toast.success("Job Posted!", {
@@ -82,7 +82,7 @@ function Admin() {
     // console.log(jobId);
     if (jobId) {
       await axios
-        .delete(`https://interns-f4di.onrender.com/jobs/delete/${jobId}`)
+        .delete(`https://ten-internship-xjyn.onrender.com/jobs/delete/${jobId}`)
         .then(res => {
           console.log(res.data.message);
           window.location.reload(); //temporary used
@@ -101,7 +101,7 @@ const updatejob = async (jobId, jobdetail) => {
   
   try {
     if (jobId) {
-      const response = await axios.put(`https://interns-f4di.onrender.com/jobs/${jobId}`, jobdetail);
+      const response = await axios.put(`https://ten-internship-xjyn.onrender.com/jobs/${jobId}`, jobdetail);
       console.log(response.data.message);
       toast.success("Job updated successfully!", { position: toast.POSITION.TOP_CENTER });
       setJobsarr(prev => prev.map(job => (job.job_id === jobId ? response.data.updatedJob : job)));
@@ -120,7 +120,7 @@ const updatejob = async (jobId, jobdetail) => {
     const getdata = async () => {
       console.log("UseEffect is Working.");
       await axios
-        .get("https://interns-f4di.onrender.com/jobs/all")
+        .get("https://ten-internship-xjyn.onrender.com/jobs/all")
         .then(res => {
           console.log("Job Data : ", res.data);
           setJobsarr(res.data);
@@ -139,7 +139,7 @@ const updatejob = async (jobId, jobdetail) => {
     try {
       await axios
         .post(
-          `https://interns-f4di.onrender.com/internships/create`,
+          `https://ten-internship-xjyn.onrender.com/internships/create`,
           internDetails
         )
         .then(res => {
@@ -177,7 +177,7 @@ const updatejob = async (jobId, jobdetail) => {
     if (interndetail.internship_id) {
       await axios
         .put(
-          `https://interns-f4di.onrender.com/internships/update/${interndetail.internship_id}`,
+          `https://ten-internship-xjyn.onrender.com/internships/update/${interndetail.internship_id}`,
           interndetail
         )
         .then(res => {
@@ -191,7 +191,7 @@ const updatejob = async (jobId, jobdetail) => {
     } else {
       console.log(`Please SignIn First`);
     }
-    //https://interns-f4di.onrender.com/internships/update/${internId}
+    //https://ten-internship-xjyn.onrender.com/internships/update/${internId}
   };
 
   //Delete Internship
@@ -200,7 +200,7 @@ const updatejob = async (jobId, jobdetail) => {
     if (internId) {
       await axios
         .delete(
-          `https://interns-f4di.onrender.com/internships/delete/${internId}`
+          `https://ten-internship-xjyn.onrender.com/internships/delete/${internId}`
         )
         .then(res => {
           console.log(res.data.message);
@@ -219,7 +219,7 @@ const updatejob = async (jobId, jobdetail) => {
     const getdata = async () => {
       console.log("Internships UseEffect is Working.");
       await axios
-        .get("https://interns-f4di.onrender.com/internships/show/all")
+        .get("https://ten-internship-xjyn.onrender.com/internships/show/all")
         .then(res => {
           setInternsarr(res.data);
         })

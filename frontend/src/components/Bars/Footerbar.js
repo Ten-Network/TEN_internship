@@ -16,7 +16,7 @@ function Footerbar() {
   const getdata = async () => {
     const TOKEN = sessionStorage.getItem("auth-token");
     await axios
-      .get("https://interns-f4di.onrender.com/user/me", {
+      .get("https://ten-internship-xjyn.onrender.com/user/me", {
         headers: { authtoken: TOKEN },
       })
       .then(res => {

@@ -34,7 +34,7 @@ function SignUp() {
     console.log(event.target.value);
     try {
       const response = await fetch(
-        "https://interns-f4di.onrender.com/user/register",
+        "https://ten-internship-xjyn.onrender.com/user/register",
         {
           method: "POST",
           headers: {

@@ -254,7 +254,7 @@
 // //       };
 
 // //       const response = await axios.put(
-// //         `https://interns-f4di.onrender.com/jobs/${currjobdetails.job_id}`, // Update API endpoint
+// //         `https://ten-internship-xjyn.onrender.com/jobs/${currjobdetails.job_id}`, // Update API endpoint
 // //         updatedJobDetails,
 // //         {
 // //           headers: {

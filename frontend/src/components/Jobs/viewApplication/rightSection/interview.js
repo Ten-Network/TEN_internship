@@ -47,7 +47,7 @@ const InterviewSection = ({ jobId }) => {
         </div>
         <div className="resume info">
           <a
-            href={`https://interns-f4di.onrender.com/get-resume/${resume}`}
+            href={`https://ten-internship-xjyn.onrender.com/get-resume/${resume}`}
             target="_blank"
             rel="noopener noreferrer"
           >

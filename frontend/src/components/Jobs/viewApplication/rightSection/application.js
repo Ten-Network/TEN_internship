@@ -108,7 +108,7 @@ const Applications = ({jobId, roleName, companyName}) => {
                 </div>
                 <div className="resume info">
                     <a
-                        href={`https://interns-f4di.onrender.com/assets/download-resume/${resume}`}
+                        href={`https://ten-internship-xjyn.onrender.com/assets/download-resume/${resume}`}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
