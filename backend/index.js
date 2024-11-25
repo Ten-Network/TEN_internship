@@ -26,7 +26,7 @@ const app = express();
 
 // CORS Configuration
 app.use(cors({
-    origin: ["http://localhost:3000", "https://interns-nu.vercel.app"], // Allowed origins
+    origin: ["http://localhost:3000", "https://ten-internship-two.vercel.app"], // Allowed origins
     credentials: true, // Allow credentials such as cookies to be sent
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"], // Allowed methods
     allowedHeaders: ["Content-Type", "Authorization"], // Allowed headers
