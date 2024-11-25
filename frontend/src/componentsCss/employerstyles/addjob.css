@@ -1,0 +1,150 @@
+/* Main container */
+.job-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f6f9;
+  min-height: 100vh;
+  width: 800px;
+  box-sizing: border-box;
+}
+
+/* Job creation form container */
+.create-job {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 900px;
+  padding: 30px;
+  margin-top: 30px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.create-job .heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.create-job .heading h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Default grid layout for larger screens */
+.admin-form-container .form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+/* Form field styling */
+.input-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+.tags {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.form-control {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+}
+
+textarea.form-control {
+  resize: vertical;
+  max-height: 250px;
+}
+
+.form-control::placeholder {
+  color: #bbb;
+  font-style: italic;
+}
+
+/* Button styling */
+button.created {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+button.created:hover {
+  background-color: #0056b3;
+}
+
+/* Adjustments for smaller screens (Tablet) */
+@media screen and (max-width: 768px) {
+  .create-job {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .form {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .form-row {
+    margin-bottom: 12px;
+  }
+
+  .form-control {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  button.created {
+    font-size: 1.1rem;
+    padding: 12px 15px;
+  }
+}
+
+/* Further adjustments for mobile (Mobile Portrait) */
+@media screen and (max-width: 480px) {
+  .create-job {
+    padding: 20px;
+  }
+
+  .create-job .heading h2 {
+    font-size: 1.6rem;
+  }
+
+  .form-control {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  button.created {
+    font-size: 1rem;
+  }
+}

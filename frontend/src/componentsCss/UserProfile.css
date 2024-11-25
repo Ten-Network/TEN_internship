@@ -1,0 +1,334 @@
+/* Main container for the profile page
+.profile {
+  padding: 50px 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.left-side {
+  width: 50%;
+  background-color: #f4f4f9;
+  padding: 20px;
+}
+
+.left-heading h4 {
+  font-size: 24px;
+  color: #4f5d73;
+  font-weight: bold;
+  text-align: center;
+}
+
+.steps-content h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.steps-content p {
+  font-size: 18px;
+  color: #6c757d;
+}
+
+.progress-bar {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.progress-bar li {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #dcdfe6;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #6c757d;
+  text-align: center;
+}
+
+.progress-bar li.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.right-side {
+  width: 90%;
+  padding: 20px;
+}
+
+.main {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-content p {
+  font-size: 16px;
+  color: #495057;
+}
+
+.step-content input,
+.step-content select,
+.step-content textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.step-content input[type="file"] {
+  padding: 0;
+}
+
+.step-content button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.step-content button:disabled {
+  background-color: #6c757d;
+}
+
+.step-content button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.step-content input:focus,
+.step-content select:focus,
+.step-content textarea:focus {
+  border-color: #007bff;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+h4 {
+  color: #333;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.step-number {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.d-none {
+  display: none;
+}
+
+.active {
+  display: block;
+} */
+
+
+
+/* Main container for the profile page */
+.profile {
+  padding: 50px 0;
+  
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+ 
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: 30px; */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.left-side {
+  width: 50%;
+  background-color: #f4f4f9;
+  padding: 0 20px 20px 20px;
+  /* height: 100vh; */
+}
+
+.left-heading h4 {
+  font-size: 24px;
+  color: #4f5d73;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.steps-content h3 {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.steps-content p {
+  font-size: 18px;
+  color: #6c757d;
+  margin-bottom: 45px;
+}
+
+.progress-bar {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.progress-bar li {
+  font-size: 16px;
+  padding: 10px;
+  background-color: #dcdfe6;
+  margin-bottom: 40px;
+  border-radius: 5px;
+  color: #6c757d;
+  text-align: center;
+}
+
+.progress-bar li.active {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.right-side {
+  width: 90%;
+  /* padding: 20px; */
+}
+
+.main {
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.step-content p {
+  font-size: 16px;
+  color: #495057;
+}
+
+.step-content input,
+.step-content select,
+.step-content textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.step-content input[type="file"] {
+  padding: 0;
+}
+
+.step-content button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.step-content button:disabled {
+  background-color: #6c757d;
+}
+
+.step-content button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.step-content input:focus,
+.step-content select:focus,
+.step-content textarea:focus {
+  border-color: #007bff;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+h4 {
+  color: #333;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+h3 {
+  font-size: 24px;
+  color: #007bff;
+}
+
+.step-number {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.d-none {
+  display: none;
+}
+
+.active {
+  display: block;
+}
