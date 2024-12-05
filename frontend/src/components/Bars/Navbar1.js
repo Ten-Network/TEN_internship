@@ -60,7 +60,7 @@ const Navbar = ({ isSidebarOpen, handleToggleSidebar }) => {
 
           {/* Desktop Navbar Links */}
           <div className={`navbar-right ${isOpen ? 'open' : ''}`}>
-            <Link to="/jobs" className="navbar-link">Find Internships</Link>
+            <a href="/jobs" className="navbar-link">Find Internships</a>
             <Link to="/contactus" className="navbar-link">Contact Us</Link>
 
             {loggedInUser ? (

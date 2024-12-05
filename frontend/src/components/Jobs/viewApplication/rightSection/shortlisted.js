@@ -102,7 +102,7 @@ const ShortListed = ({ jobId, roleName, companyName }) => {
                     {canJoinImmediately === 'No' ? startingDate : 'Immediately'}
                 </div>
                 <div className="resume info">
-                    <a href={`https://internconnect-leuh.onrender.com/get-resume/${resume}`} target="_blank" rel="noopener noreferrer">
+                    <a href={`https://ten-internship-xjyn.onrender.com/get-resume/${resume}`} target="_blank" rel="noopener noreferrer">
                         Download Resume
                     </a>
                 </div>

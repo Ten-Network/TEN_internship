@@ -26,38 +26,84 @@ function SignUp() {
 
   const navigate = useNavigate();
 
-  const handleSubmit = async event => {
+  // const handleSubmit = async event => {
+  //   event.preventDefault();
+  //   const randomSuffix = Math.floor(Math.random() * 1000);
+  //   const userName = `${firstName}_${lastName}${randomSuffix}`;
+  //   console.log(email, password, firstName, lastName);
+  //   console.log(event.target.value);
+  //   try {
+  //     const response = await fetch(
+  //       "http://localhost:6500/user/register",
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify({
+  //           firstName,
+  //           lastName,
+  //           email,
+  //           password,
+  //           // userName,
+  //         }),
+  //       }
+  //     );
+  //     const data = await response.json();
+  //     console.log(data);
+  //     localStorage.setItem("token", data.authtoken);
+  //     navigate("/user/login");
+  //   } catch (error) {
+  //     alert(error);
+  //     console.log(error);
+  //   }
+  // };
+
+
+
+  const handleSubmit = async (event) => {
     event.preventDefault();
     const randomSuffix = Math.floor(Math.random() * 1000);
     const userName = `${firstName}_${lastName}${randomSuffix}`;
-    console.log(email, password, firstName, lastName);
-    console.log(event.target.value);
+    console.log("Form Submitted", { email, password, firstName, lastName, userName });
+  
     try {
-      const response = await fetch(
-        "https://ten-internship-xjyn.onrender.com/user/register",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            firstName,
-            lastName,
-            email,
-            password,
-            userName,
-          }),
-        }
-      );
+      const response = await fetch("https://ten-internship-xjyn.onrender.com/user/register", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          firstName,
+          lastName,
+          email,
+          password,
+          userName, // Uncomment if username is required
+        }),
+      });
+  
+      if (!response.ok) {
+        // Handle HTTP errors
+        const errorText = await response.text();
+        throw new Error(`Server Error: ${response.status} - ${errorText}`);
+      }
+  
       const data = await response.json();
-      console.log(data);
-      localStorage.setItem("token", data.authtoken);
-      navigate("/user/eprofile");
+      console.log("Response Data:", data);
+  
+      if (data.authtoken) {
+        localStorage.setItem("token", data.authtoken);
+        alert("User registered successfully!");
+        navigate("/user/login");
+      } else {
+        throw new Error("Token not received. Registration failed.");
+      }
     } catch (error) {
-      alert(error);
-      console.log(error);
+      alert(`Registration failed: ${error.message}`);
+      console.error("Error during registration:", error);
     }
   };
+  
 
   return (
     <div>
@@ -169,7 +215,7 @@ function SignUp() {
                             class="social-icons"
                             style={{ marginTop: "-0.5rem" }}
                           >
-                            <a href="http://localhost:8080/auth/google/register">
+                            <a href="https://ten-internship-xjyn.onrender.com/auth/google/register">
                               <button
                                 aria-label="Signup with Google"
                                 class="icon "
@@ -505,7 +551,7 @@ export default SignUp;
 //                           {/* Social Icons */}
 //                           <div className="social-icons" style={{ marginTop: "1rem" }}>
 //                             <p className="message">Signup with Accounts</p>
-//                             <a href="http://localhost:8080/auth/google/register">
+//                             <a href="https://ten-internship-xjyn.onrender.com/auth/google/register">
 //                               <button aria-label="Signup with Google" className="icon">
 //                                 <FontAwesomeIcon icon={faGoogle} />
 //                               </button>
